@@ -24,9 +24,9 @@ function ngmark(cx, cy, r){
   pop();
 }
 
-function star(cx, cy, r){
+function  regularPolygon(n, cx, cy, r){
   beginShape();
-  for(var i = 0; i < 5; i++){
+  for(var i = 0; i < n; i++){
     let theta = TWO_PI * i * 2 / 5 - HALF_PI;
     let x = cx + cos(theta) * r;
     let y = cy + sin(theta) * r;
